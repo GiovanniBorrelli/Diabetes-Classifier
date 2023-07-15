@@ -12,13 +12,16 @@ There is a Correlation Matrix that shows the correlation between each attribute 
 There is a missingno graphic showing that there are no empty cells, and another graphic showing the duplicates.
 The conclusion is that the dataset is imbalanced, with 91% negative cases for diabetes and 9% positive cases.
 
-To balance the dataset, ADASYN and RandomUnderSampler were used to have a 50/50 ratio of positive/negative diabetes cases.
+To balance the dataset, [ADASYN](https://imbalanced-learn.org/dev/references/generated/imblearn.over_sampling.ADASYN.html) and [RandomUnderSampler](https://imbalanced-learn.org/dev/references/generated/imblearn.under_sampling.RandomUnderSampler.html) were used to have a 50/50 ratio of positive/negative diabetes cases.
 In order to do that, "gender" and "smoking_history" attributes were encoded.
 
 ## MODEL TRAINING
-The model is trained using the diabetes dataset (Cross-validation is used).
-The 3 best classifiers are: RandomForest, SVC, MLPClassifier:
-All these classifiers have great scores of Accuracy, Precision, Recall and F1-Score.
+The model is trained using the diabetes dataset.
+[Cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html) is used.
+The 3 chosen classifiers are: <strong>RandomForest, SVC, MLPClassifier.</strong>
+
+All these classifiers are evaluated with the following metrics: <strong>Accuracy, Precision, Recall and F1-Score.</strong>
+
 The best one, RandomForest, was chosen.
 The model trained with the unmodified dataset gave these scores:
 - Precision: 0.93
@@ -33,7 +36,7 @@ Using the balanced dataset increased the overall performance of the model, havin
 - F1-Score: 0.93
 
 ### Iperparameters Optimization
-Using GridSearchCV, the best Iperparameters settings were:
+Using [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html), the best Iperparameters settings were:
 {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50},
 which gave these scores:
 - Precision: 0.97
