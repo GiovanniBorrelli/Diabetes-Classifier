@@ -1,3 +1,17 @@
+# HOW TO RUN
+It is very simple to predict if a patient has diabetes or not. No installation is required.
+Download the [Diabetes Dataset](https://github.com/GiovanniBorrelli/Diabetes-Classifier/blob/main/Input%20Predictor/DiabetesDataset.xlsx) and the [InputPredictor.ipynb](https://github.com/GiovanniBorrelli/Diabetes-Classifier/blob/main/Input%20Predictor/InputPredictor.ipynb) notebook needed for predicting if the patient has diabetes.
+
+Open [Google Colab](https://colab.research.google.com/).
+
+A pop-up window will appear, asking to create a notebook or to load an existing one.
+There are 2 ways to do it:
+- Select the "Load" section in the top-right corner, and load the downloaded notebook.
+- Or select the "Github" section, and paste the link of this repo. Colab will find the notebooks of this repo, and you can select the one needed.
+
+Load the Diabetes Dataset in the folder section. Execute the cells. In the 4th cells, you can select the input data. You can manually customise the input based on the data of the patient you need to examine. The notebook will show whether the patient has diabetes or not.
+
+
 # Diabetes-Predictor
 Artificial Intelligence University Project
 
