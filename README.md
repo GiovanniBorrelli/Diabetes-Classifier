@@ -9,7 +9,7 @@ There are 2 ways to do it:
 - Select the "Load" section in the top-right corner, and load the downloaded notebook.
 - Or select the "Github" section, and paste the link of this repo. Colab will find the notebooks of this repo, and you can select the one needed.
 
-Load the Diabetes Dataset in the folder section. Execute the cells. In the 4th cells, you can select the input data. You can manually customise the input based on the data of the patient you need to examine. The notebook will show whether the patient has diabetes or not.
+Load the Diabetes Dataset in the folder section. Execute the cells. In the 4th cell, you can select the input data. You can manually customise the input based on the data of the patient you need to examine. The notebook will show whether the patient has diabetes or not.
 
 
 # Diabetes-Predictor
